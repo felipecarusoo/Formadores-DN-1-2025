@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function (){
+
 let tamanhoAtualFonte = 1;
 
 const aumentaFonteBotao = document.getElementById ('aumentar-fonte');
@@ -28,6 +29,11 @@ botaoDeAcessibilidade.addEventListener('click', function (){
 
 })
 
+const alternaContraste = document.getElementById('alterna-contraste')
 
+alternaContraste.addEventListener('click', function (){
+    document.body.classList.toggle('alto-contraste')
+
+})
 
 })  
